@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+        <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .navbar {
+            padding: 10px;
+            background-color: black;  
+            width: 100%;
+            z-index: 1000;
+            font-size: 2rem;
+            border: none;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color:aliceblue !important;
+        }
+
+        .navbar-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-menu li {
+            margin-right: 20px;
+        }
+
+        .navbar-menu li a {
+            color: white;
+            text-decoration: none;
+        }
+        #hakkimizdakucuk{
+            text-align: center;
+            float: left;
+            width: 100%;
+            height: 350px;
+            background-color: black;
+        }
+        .hakkimizdakucukyazi{
+            position: absolute;
+            top: 15%;
+            left: 37.5%;
+            font-size: 65px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        #hakkimizdabuyuk{
+            text-align: center;
+            float: left;
+            width: 100%;
+            height: 850px;
+            background-color: #DEB887;
+        }
+        .footer{
+            text-align: center;
+            width: 100%;
+            height: 150px;
+            background-color: #DEB887;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            border-top: 5px solid black;
+        }
+        .logo{
+            width: 150px;
+            height: 150px;
+            margin-left: 10px;    
+        }
+        .footer-content{
+            max-width: 800px;
+            margin: 0;
+            padding: 0;
+        }
+        .footer p {
+            margin: 0;
+            padding: 0;
+        }
+        .social-media {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        .social-media li {
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+        #logo{
+            width: 250px;
+            height: 250px;
+        }
+        #logo-buton{
+            width: 25px;
+            height: 25px;
+        }
+        ::-webkit-scrollbar{
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+        }
+        @media (max-width: 850px){
+            .navbar {
+                flex-direction:column;
+                align-items: flex-start;
+            }
+            .navbar-menu {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hakkimizdakucukyazi{
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                font-size: 65px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            #hakkimizdabuyuk h2{
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 450px){
+            #hakkimizdabuyuk h2{
+                font-size: 1.5rem;
+            }
+        }
+        @media (max-width: 1750px){
+            #hakkimizdabuyuk h2{
+                font-size: 1.7rem;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <title>Hakkımızda</title>
+        <nav class="navbar navbar-default ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="anasayfa.html">ABCDEF</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>   
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="anasayfa.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="hakkimizdakucuk">
+            <img src="kullanilan_resimler/kopya.jpg" style="width: 100%;">
+            <h5 class="hakkimizdakucukyazi">HAKKIMIZDA<h5>
+        </div>
+        <div id="hakkimizdabuyuk">
+            <img src="kullanilan_resimler/Frame-924.png">
+            <h2>
+                1990 yılında kurulan firmamız, sektördeki uzun yıllara dayanan tecrübesi ve müşteri memnuniyeti odaklı yaklaşımıyla hizmet vermektedir. 
+                Amacımız, müşterilerimize kaliteli ve güvenilir ürünler sunarak onların beklentilerini en üst düzeyde karşılamaktır. 
+                Kurulduğumuz günden bu yana, kalite standartlarımızı sürekli olarak yükselterek ve hizmet yelpazemizi genişleterek büyümeye devam ediyoruz. <br> <br>
+                Vizyonumuz, yenilikçi çözümlerimiz ve profesyonel ekibimizle sektörde lider konumda yer almak; misyonumuz ise sürdürülebilir büyüme ve sürekli gelişim prensipleri doğrultusunda, müşterilerimize en iyi hizmeti sunmaktır. 
+                Bu doğrultuda, teknolojiye ve insan kaynağına yaptığımız yatırımlarla sektörde fark yaratmayı hedefliyoruz. <br><br>
+                Geniş ürün yelpazemiz ve uzman kadromuzla, ihtiyaçlarınıza en uygun çözümleri sunmak için buradayız. 
+                Ürünlerimiz ve hizmetlerimiz, kalite ve güvenilirlik açısından sektörün en yüksek standartlarına uygundur. 
+                Değerlerimiz arasında dürüstlük, güven ve müşteri memnuniyeti ön planda yer almaktadır. Siz değerli müşterilerimizin güveni ve desteğiyle, her geçen gün daha da büyüyen bir aile olmaktan gurur duyuyoruz. <br><br>
+                Ayrıca, sosyal sorumluluk projelerine verdiğimiz önemle, topluma ve çevreye duyarlı bir yaklaşım sergiliyoruz. 
+                Gelecek nesillere daha yaşanabilir bir dünya bırakma hedefiyle, sürdürülebilirlik çalışmalarımızı aralıksız sürdürüyoruz. <br><br>
+                Bizimle çalışmayı seçtiğiniz için teşekkür eder, birlikte nice başarılı projelere imza atmayı dileriz. 
+                Müşteri memnuniyetini her zaman öncelikli tutarak, sizlere en iyi hizmeti sunmak için buradayız. Siz de bizimle bu yolculukta yer almak isterseniz, kapımız her zaman açık. 
+                Sorularınız ve ihtiyaçlarınız için bizimle iletişime sayfamızdan iletişime geçmekten çekinmeyin.
+            </h2>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ABC Holding. Tüm hakları saklıdır.</p>
+                <ul class="social-media"> 
+                    <li>
+                        <img src="kullanilan_resimler/facebook.svg" alt="">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <img src="kullanilan_resimler/twitter-x.svg" alt="">
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <img src="kullanilan_resimler/instagram.svg" alt="">
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <img src="kullanilan_resimler/youtube.svg" alt="">
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
